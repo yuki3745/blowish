@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsible.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f3bdbfba30.js" crossorigin="anonymous"></script>
+    <title>株式会社ブローウィッシュ</title>
+</head>
+<body>
+    <header>
+        <a href="#"><img src="img/blowish_logo.svg" alt="Blowishロゴ"></a>
+        <div class="pc-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about-us">About us</a></li>
+                <li><a href="#result">Result</a></li>
+                <li><a href="#recruit">Recruit</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+        </div>
+        
+        <div class="mobile-menu-icon">
+            <div class="container">
+                <div>
+                    <button id="open" class="swc">
+                        <i class="bi bi-list"></i>
+                    </button>
+                </div>
+            
+
+                <div>
+                    <button id="close" class="swc close">
+                        <i class="bi bi-x-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="sp-menu">
+        <ul>
+            <li class="menu current"><a href="#">Home</a></li>
+            <li class="menu"><a href="#services">Services</a></li>
+            <li class="menu"><a href="#about-us">About us</a></li>
+            <li class="menu"><a href="#result">Result</a></li>
+            <li class="menu"><a href="#recruit">Recruit</a></li>
+            <li class="menu"><a href="#news">News</a></li>
+            <li class="menu"><a href="#contact">Contact Us</a></li>
+            <li class="menu"><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+    </div>
+
+    <section class="home" id="home">
+        <div class="container">
+            <h1>BLOW ✕ WISH = BLOWISH</h1>
+            <p>We will blow your wishes colorfully and make you happy!!</p>
+            <a href="#services" class="btn">Services</a>
+            <a href="#recruit" class="btn">Recruit</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <p class="common">高いスキルと豊富な経験を持ってお客様に最適なITソリューションを提供します。</p>
+        </div>
+
+        <div id="mask" class="modal-hidden"></div>
+
+        <div class="skills">
+            <div class="skill">
+                <img src="img/設定の歯車アイコン" alt="システム開発" width="60">
+                <h3><a href="#modal-1" data-id="modal-1">システム開発</a></h3>
+                <p>オープン系・Web系を始め、各種プラットフォームにおけるアプリケーションの開発に力を入れています。</p>
+            </div>
+
+            <section id="modal-1" class="content modal-hidden">
+                <div class="container">
+                    <h1>システム開発</h1>
+                    <img src="img/IT1.png" width="200px" alt="システム開発">
+                    <p>
+                        インハウスで使用する業務システムや外部に公開するポータルサイトなど、お客様のニーズに合わせた機能を設計し、目的に適したタイプのシステムを柔軟に構築します。<br>
+                        <br>
+                        ただ作るだけではなく、トレンドやセキュリティを意識して、時代のニーズにも合ったシステム開発を心がけています。<br>
+                        <br>
+                        例えば、以下の様々な開発環境に対応しています。
+                    </p>
+                    <ul>
+                        <li>Java</li>
+                        <li>ASP.net、VB.net</li>
+                        <li>PHP、HTML、CSS</li>
+                        <li>Ruby</li>
+                        <li>Oracle、MySQL、SQLServer</li>
+                        <li>WordPress、CakePHP、Eclipse、XAML、Struts</li>
+                    </ul>
+                    <div id="modal-close"><i class="bi bi-x-lg"></i>CLOSE</div>
+                </div>
+            </section>
+
+            <div class="skill">
+                <img src="img/ストレージアイコン1.png" alt="インフラ構築・運用"  width="60">
+                <h3><a href="#modal-2" data-id="modal-2">インフラ構築・運用</a></h3>
+                <p>サーバーおよびネットワーク構築、運用・監視などお客様のITインフラの構築、維持をサポートします。</p>
+            </div>
+
+            <section id="modal-2" class="content modal-hidden">
+                <div class="container">
+                    <h1>インフラ構築・運用</h1>
+                    <img src="img/IT2.png" width="200px" alt="システム開発">
+                    <p>
+                        オンプレミスからクラウド環境まで、お客様のニーズに適したインフラ環境の設計・構築が可能です。<br>サーバ・データベースからネットワークまであらゆるインフラ環境をワンストップで対応致します。<br>
+                        <br>
+                        構築後のケアや継続的な運用・管理などのアフターサービスも充実しています。
+                    </p>
+                    <ul>
+                        <li>Windows、Linux</li>
+                        <li>Oracle、SQLServer</li>
+                        <li>VMWare、Hyper-V</li>
+                        <li>ARCServe、BackupExec</li>
+                        <li>Exchenge、Sendmail</li>
+                        <li>YAMAHA、Cisco、アライドテレシス</li>
+                    </ul>
+                    <div id="modal-close"><i class="bi bi-x-lg"></i>CLOSE</div>
+                </div>
+            </section>
+
+            <div class="skill">
+                <img src="img/Uターン矢印 1.png" alt="アウトソーシング" width="60">
+                <h3><a href="#modal-3" data-id="modal-3">アウトソーシング</a></h3>
+                <p>お客様の業務とニーズにあわせたベストなソリューションをアウトソーシングサービスで提供しています。</p>
+            </div>
+
+            <section id="modal-3" class="content modal-hidden">
+                <div class="container">
+                    <h1>アウトソーシング</h1>
+                    <img src="img/IT3.png" width="200px" alt="システム開発">
+                    <p>
+                        ITに関連したお客様の業務を一括して請け負います。<br>お客様の専門に特化した技術者を用意して、プロフェッショナルとしての業務を遂行します。<br>ニーズにあった技術レベルのエンジニアにて対応させて頂きます。
+                    </p>
+                    <ul>
+                        <li>システム開発</li>
+                        <li>サーバー・ネットワーク構築</li>
+                        <li>データベース構築</li>
+                        <li>システム評価・テスト</li>
+                        <li>データ入力</li>
+                    </ul>
+                    <div id="modal-close"><i class="bi bi-x-lg"></i>CLOSE</div>
+                </div>
+            </section>
+
+            <div class="skill">
+                <img src="img/会話アイコン.png" alt="コンサルティング" width="70">
+                <h3><a href="#modal-4" data-id="modal-4">コンサルティング</a></h3>
+                <p>お客様の問題に確かな技術と豊富な経験に裏打ちされた適切なアドバイスをお客様に提案します。</p>
+            </div>
+
+            <section id="modal-4" class="content modal-hidden">
+                <div class="container">
+                    <h1>コンサルティング</h1>
+                    <img src="img/IT4.png" width="200px" alt="システム開発">
+                    <p>
+                        お客様の業務の問題点を洗い出し、適切なソリューションをご提案します。
+                    </p>
+                    <ul>
+                        <li>ハードウェアの老朽化</li>
+                        <li>ネットワーク遅延</li>
+                        <li>業務の効率化、見える化</li>
+                        <li>マンパワー不足</li>
+                        <li>技術者育成</li>
+                    </ul>
+                    <div id="modal-close"><i class="bi bi-x-lg"></i>CLOSE</div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <section class="company" id="about-us">
+        <div class="container">
+            <h2>About Our Company</h2>
+            <p class="common">ひとりひとりのエンジニアが活躍し、充実した生活を。</p>
+            <div class="greetings">
+                <div class="greeting">
+                    <img src="img/ceo.jpg" alt="代表取締役" width="200">
+                    <p class="name">代表取締役  村端 恵祐</p>
+                </div>
+                <div class="greeting">
+                    <p class="description">
+                        「社員が楽しく、高いモチベーションで働ける環境をつくりたい」という想いから、2013年末に創業した弊社、株式会社ブローウィッシュ。<br><br>
+                        
+                        社名の「ブローウィッシュ」は、BLOW（咲かせる）とWISH（希望）を組み合わせた造語。顧客・社員とその家族の「希望」を「咲かせる」ことで付加価値を実現し、関わる人全てを幸せにしたいという思いで命名しました。<br><br>
+        
+                        誰もが溢れでるようなモチベーションの中、やりがいを持って楽しく働きたいと思うのが正直なところであり、仕事面での充実感があってこそ、プライベートも人生も充実してくると考えます。<br><br>
+                        
+                        エンジニアとしてスキル・経験を積み上げ、自分が望むキャリアパスを歩むことができる、自分の市場価値、会社への貢献に見合った納得感のあるフィードバックが受けられる。ブローウィッシュに所属していることで、エンジニア人生を思う存分楽しめる環境構築を目指しています。<br><br>
+                        
+                        私たちが活動するIT業界は今、活況を呈していますが、AI、 IoT 、Fintechなど、新しい仕組みや概念が次から次へと生み出されていく中、誰しもが新しいことにチャレンジできるという時代だと考えます。自らのアイデアで自らのサービスを構築し、それを世の中に発信し、評価されるという最高のモチベーションを求めてブローウィッシュのビジネスを展開していきたいと考えます。<br><br>
+                        
+                        エンジニア視点でエンジニアと対峙し、エンジニアを大切にすることが、より良いサービスの提供、顧客満足度の向上につながり、各エンジニアの目の前にいるお客様の幸せが実現できると信じています。また、このような考え方で活動を継続する事により、会社がエンジニアを惹きつけ、同じ志向を持った優秀なエンジニアとの出会いに繋がっていくと考えています。<br><br>
+                        
+                        ブローウィッシュに関わるエンジニアと顧客が幸せになる「スキーム」を形成し、顧客にもエンジニアにも愛される「ブローウィッシュ」を目指していきたいと思います。
+                    </p>
+                </div>
+            </div>
+            <div class="important-things">
+                <p>ブローウィッシュが大切にしたい３つのこと</p>
+                <dl>
+                    <dt>社員の納得感</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                「本人がやりがいを持って挑める仕事」、「将来のキャリアパスが描ける道」を最優先事項として尊重します。（もちろん市場の状況や会社の都合もある為、様々な要素を踏まえ、本人と協議をしてお互いが納得した上で意思決定をします。）
+                            </li>
+                            <li>
+                                社員が自負する会社への貢献と、それに対する会社からのフィードバック（評価、給与、待遇など）のギャップをできるだけ少なくしたいと考えています。
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>社員の成長</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                ブローウィッシュに在籍しているからこその成長」が実感できる環境の構築を目指します。
+                            </li>
+                            <li>
+                                それぞれのエンジニアが描く理想のエンジニアに近づく為、会社としてのどのように関わるべきかを常に考え、会社としてできるバックアップへの労力は惜しみません。
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>社員のモチベーション</dt>
+                    <dd>
+                        <ul>
+                            <li>
+                                自分たちのビジネスアイデアを試してみたいというチャレンジ精神に応える事ができる会社であり続ける事、その先に待つ、未経験の新たなモチベーションを体感できる環境構築を目指します。
+                            </li>
+                            <li>
+                                プライベートの充実が仕事へのモチベーションに繋がるという考えの元、業務以外の楽しいことや新しいことが次々と起こるというワクワク感を大切にする会社にしたいと考えています。
+                            </li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div class="capital">
+            <ul>
+                <li>
+                    <i class="bi bi-emoji-smile"></i>
+                    <p>Happy Workers</p>
+                </li>
+                <li>
+                    <i class="bi bi-star"></i>
+                    <p>CEO</p>
+                </li>
+                <li>
+                    <i class="bi bi-boxes"></i>
+                    <p>Capital</p>
+                </li>
+                <li>
+                    <i class="bi bi-building"></i>
+                    <p>Foundation</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="result" id="result">
+        <div class="container">
+            <h2>Result</h2>
+            <p>
+                株式会社ブローウィッシュは、理化学系公的研究機関での開発・構築経験が豊富です。
+            </p>
+        
+        <div class="achievements">
+            <table>
+                <tr>
+                    <th>案件名</th>
+                    <th>実績</th>
+                    <th>顧客</th>
+                </tr>
+                <tr>
+                    <td>創薬実験情報登録システム開発</td>
+                    <td>
+                        <p>
+                            <span>化合物データベース連携システム開発</span><br>
+                            データベース登録された自社合成の化合物基本情報を、社内関連部署のアプリケーションへ連携・公開するためのデータ連携インタフェースを開発。<br>
+                            <br>
+                            <span>創薬実験情報登録システム開発</span><br>
+                            化合物の物性値をデータベース登録、参照するアプリケーションを開発。
+
+                        </p>
+                        
+                    </td>
+                    <td>国内大手製薬会社</td>
+                </tr>
+                <tr>
+                    <td>バイオインフォマティクス部門支援業務</td>
+                    <td>
+                        <p>
+                            <span>研究データ抽出、更新作業、更新プログラム作成</span><br>
+                            PDBのDNA解析情報をダウンロード、データ成形し、社内のアプリケーションから参照可能な状態に更新・登録するプログラムを開発。<br>
+                            <br>
+                            <span>簡易化合物情報検索Webアプリケーション作成</span><br>
+                            化合物とタンパク質の活性情報、および関連の物性情報と外部システムの関連情報を横断的に検索可能なシステムを開発。
+                        </p>
+                    </td>
+                    <td>国内大手製薬会社</td>
+                </tr>
+                <tr>
+                    <td>HTS研究支援業務</td>
+                    <td>
+                        <p>
+                            <span>HTSデータ解析研究補助、HTSデータ蓄積のためのシステム開発</span><br>
+                            HTS解析ソフトウェアからのデータ抽出、およびデータアーカイブのシステム開発。<br>
+                            <br>
+                            <span>HTS業務進捗管理ステム開発</span><br>
+                            プレート作製からアッセイ実験までの進捗状況を把握・管理可能なシステムを開発。
+                        </p>
+                    </td>
+                    <td>国内大手製薬会社</td>
+                </tr>
+                <tr>
+                    <td>化合物検索Webアプリケーション開発</td>
+                    <td>
+                        <p>
+                            <span>化合物情報検索Webシステム開発</span><br>
+                            自社化合物および他システム関連情報の検索、実験情報を管理するシステムの開発。
+                        </p>
+                        
+                    </td>
+                    <td>国内大手製薬会社</td>
+                </tr>
+                <tr>
+                    <td>試薬情報管理システム開発</td>
+                    <td>
+                        <p>
+                            <span>試薬情報管理システム開発</span><br>
+                            試薬購入から秤量、溶解、プレート作成までのトラッキング情報の管理システム構築。
+                        </p>
+                    </td>
+                    <td>某大規模化学研究所</td>
+                </tr>
+                <tr>
+                    <td>生物活性データ活用モジュール開発</td>
+                    <td>
+                        <p>
+                            <span>外部データベースインタフェース作成</span><br>
+                            HTS試験結果(活性値等)を抽出し、外部データベースに登録するシステムを開発。
+                        </p>
+                    </td>
+                    <td>某大規模化学研究所</td>
+                </tr>
+                <tr>
+                    <td>研究ポータルサイト開発</td>
+                    <td>
+                        <p>
+                            <span>ポータルWebサイト新規開発</span><br>
+                            研究結果の成果物をデータベースに格納し、外部関係者に公開するWebシステムを開発。
+                        </p>
+                    </td>
+                    <td>某大規模化学研究所</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    </section>
+
+    <section class="recruit" id="recruit">
+        <div class="container">
+            <h2>Recruit</h2>
+            <p>株式会社ブローウィッシュでは、以下の人材を募集しています。</p>
+
+         <div class="carousel">
+                
+            <ul id="slides">
+                <li>
+                    <table>
+                    <tr>
+                        <th>募集職種</th>
+                        <td><p>データベースエンジニア</p></td>
+                    </tr>
+                    <tr>
+                        <th>募集対象</th>
+                        <td><p>25歳～35歳位まで</p></td>
+                    </tr>
+                    <tr>
+                        <th>勤務地</th>
+                        <td><p>東京23区</p></td>
+                    </tr>
+                    <tr>
+                        <th>給与</th>
+                        <td><p>250,000円～400,000円</p></td>
+                    </tr>
+                    <tr>
+                        <th>諸手当</th>
+                        <td><p>通勤手当 他</p></td>
+                    </tr>
+                    <tr>
+                        <th>勤務時間</th>
+                        <td><p>9:00～18:00</p></td>
+                    </tr>
+                    <tr>
+                        <th>休日休暇</th>
+                        <td><p>週休2日制、夏期休暇、年末年始休暇</p></td>
+                    </tr>
+                    <tr>
+                        <th>福利厚生</th>
+                        <td><p>各種社会保険完備</p></td>
+                    </tr>
+                    <tr>
+                        <th>応募方法</th>
+                        <td><p>問合せフォームよりご連絡ください。<br>折り返し連絡致します。</p></td>
+                    </tr>
+                    <tr>
+                        <th>資料請求先</th>
+                        <td>
+                            <p>〒101-0031<br>
+                                東京都千代田区東神田2-10-9 THE PORTAL AKIHABARA 6階<br>
+                                E-mail：recruit@blowish.jp
+                            </p>
+                        </td>
+                    </tr>
+                    </table>
+                </li>
+        
+                <li>
+                    <table>
+                    <tr>
+                        <th>募集職種</th>
+                        <td><p>インフラエンジニア</p></td>
+                    </tr>
+                    <tr>
+                        <th>募集対象</th>
+                        <td><p>25歳～35歳位まで</p></td>
+                    </tr>
+                    <tr>
+                        <th>勤務地</th>
+                        <td><p>東京23区</p></td>
+                    </tr>
+                    <tr>
+                        <th>給与</th>
+                        <td><p>250,000円～400,000円</p></td>
+                    </tr>
+                    <tr>
+                        <th>諸手当</th>
+                        <td><p>通勤手当 他</p></td>
+                    </tr>
+                    <tr>
+                        <th>勤務時間</th>
+                        <td><p>9:00～18:00</p></td>
+                    </tr>
+                    <tr>
+                        <th>休日休暇</th>
+                        <td><p>週休2日制、夏期休暇、年末年始休暇</p></td>
+                    </tr>
+                    <tr>
+                        <th>福利厚生</th>
+                        <td><p>各種社会保険完備</p></td>
+                    </tr>
+                    <tr>
+                        <th>応募方法</th>
+                        <td><p>問合せフォームよりご連絡ください。<br>折り返し連絡致します。</p></td>
+                    </tr>
+                    <tr>
+                        <th>資料請求先</th>
+                        <td>
+                            <p>〒101-0031<br>
+                                東京都千代田区東神田2-10-9 THE PORTAL AKIHABARA 6階<br>
+                                E-mail：recruit@blowish.jp
+                            </p>
+                        </td>
+                    </tr>
+                    </table>
+                </li>
+                <li>
+                    <table>
+                    <tr>
+                        <th>募集職種</th>
+                        <td><p>開発エンジニア</p></td>
+                    </tr>
+                    <tr>
+                        <th>募集対象</th>
+                        <td><p>25歳～35歳位まで</p></td>
+                    </tr>
+                    <tr>
+                        <th>勤務地</th>
+                        <td><p>東京23区</p></td>
+                    </tr>
+                    <tr>
+                        <th>給与</th>
+                        <td><p>250,000円～400,000円</p></td>
+                    </tr>
+                    <tr>
+                        <th>諸手当</th>
+                        <td><p>通勤手当 他</p></td>
+                    </tr>
+                    <tr>
+                        <th>勤務時間</th>
+                        <td><p>9:00～18:00</p></td>
+                    </tr>
+                    <tr>
+                        <th>休日休暇</th>
+                        <td><p>週休2日制、夏期休暇、年末年始休暇</p></td>
+                    </tr>
+                    <tr>
+                        <th>福利厚生</th>
+                        <td><p>各種社会保険完備</p></td>
+                    </tr>
+                    <tr>
+                        <th>応募方法</th>
+                        <td><p>問合せフォームよりご連絡ください。<br>折り返し連絡致します。</p></td>
+                    </tr>
+                    <tr>
+                        <th>資料請求先</th>
+                        <td>
+                            <p>〒101-0031<br>
+                                東京都千代田区東神田2-10-9 THE PORTAL AKIHABARA 6階<br>
+                                E-mail：recruit@blowish.jp
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                </li>
+                <li>
+                    <table>
+                    <tr>
+                        <th>募集職種</th>
+                        <td><p>営業スタッフ</p></td>
+                    </tr>
+                    <tr>
+                        <th>募集対象</th>
+                        <td><p>25歳～35歳位まで</p></td>
+                    </tr>
+                    <tr>
+                        <th>勤務地</th>
+                        <td><p>東京23区</p></td>
+                    </tr>
+                    <tr>
+                        <th>給与</th>
+                        <td><p>250,000円～400,000円</p></td>
+                    </tr>
+                    <tr>
+                        <th>諸手当</th>
+                        <td><p>通勤手当 他</p></td>
+                    </tr>
+                    <tr>
+                        <th>勤務時間</th>
+                        <td><p>9:00～18:00</p></td>
+                    </tr>
+                    <tr>
+                        <th>休日休暇</th>
+                        <td><p>週休2日制、夏期休暇、年末年始休暇</p></td>
+                    </tr>
+                    <tr>
+                        <th>福利厚生</th>
+                        <td><p>各種社会保険完備</p></td>
+                    </tr>
+                    <tr>
+                        <th>応募方法</th>
+                        <td><p>問合せフォームよりご連絡ください。<br>折り返し連絡致します。</p></td>
+                    </tr>
+                    <tr>
+                        <th>資料請求先</th>
+                        <td>
+                            <p>〒101-0031<br>
+                                東京都千代田区東神田2-10-9 THE PORTAL AKIHABARA 6階<br>
+                                E-mail：recruit@blowish.jp
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                </li>
+                </ul>
+                
+                <button id="prev" class="hidden"><i class="bi bi-chevron-left"></i></button>
+                <button id="next"><i class="bi bi-chevron-right"></i></button>
+            </div>
+
+            <nav>
+                <!-- <button class="nav-current"></button>
+                <button></button>
+                <button></button>
+                <button></button> -->
+            </nav>
+        </div>
+    </section>
+
+    <section class="news" id="news">
+        <div class="container">
+            <h2>Latest News</h2>
+            <p>ブローウィッシュの最新ニュースをお届けします。</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>お問い合わせはこちらで受け付けております。</p>
+            
+            <div class="info">
+                <div class="address">
+                    <p><span>Mailing address:</span></p>
+                    <p><span>本社:</span></p>
+                    <p>〒101-0031 東京都千代田区東神田2-10-9 THE PORTAL AKIHABARA 6階</p>
+                </div>
+                <div class="mail">
+                    <p><span>Email Us:</span></p>
+                    <p>info@blowish.jp</p>
+                </div>
+            </div>
+
+            <div class="form">
+                <p>Contact Form</p>
+                <form method="post">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    <label>
+                        <input type="checkbox" required><a href="#">「個人情報の取り扱いについて」</a>に同意の上、上記内容を送信する
+                    </label>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <small>Copyright &copy; 2013-2017 BLOWISH.</small>
+    </footer>
+    <script src="main.js"></script>
+    </body>
+</html>

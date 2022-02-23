@@ -1,0 +1,258 @@
+/* Large screen */
+@media (min-width: 1000px){
+  /* common */
+  h2 {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
+
+  /* header */
+
+  header {
+    height: 90px;
+  }
+
+  header img {
+    width: 187px;
+    height: 67px;
+  }
+
+  header .mobile-menu-icon,
+  .sp-menu {
+    display: none;
+  }
+
+  header img, .pc-menu {
+    display: block;
+  }
+
+  .pc-menu ul{
+    display: flex;
+    margin-top: 20px;
+    /* line-height: 90px; */
+  }
+
+  header li{
+    padding-right: 16px;
+    color: #777;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.5s;
+    line-height: 40px;
+  }
+
+  header li:hover{
+    color: #6f9ec7;
+  }
+
+  header li:first-child {
+    margin-left: 64px;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* home */
+  .home {
+    height: 100vh;
+  }
+
+  .home .container{
+    top: 50%;
+  }
+
+  .home h1{
+    font-size: 4em;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .home p {
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+  
+  .home .btn {
+    font-size: 24px;
+    margin:auto 0;
+    display: inline-block;
+    color: #9dc6d8;
+    border: 2px solid #9dc6d8;
+    padding:20px 50px;
+    border-radius: 4px;
+    transition: 0.4s;
+  }
+
+  /* services */
+  .services p, .company p, .result p, .recruit p, .news p, .contact p{
+    font-size: 1.4rem;
+    margin-bottom: 40px;
+  }
+
+  .skill img {
+    padding-bottom: 16px;
+  }
+
+  .skills {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .skill {
+    margin-right: 16px;
+  }
+
+  .skill:last-child {
+    margin-right: 0;
+  }
+
+  .skill p {
+    line-height: 1.5rem;
+    text-align: left;
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  /* company */
+    .greetings {
+      display: flex;
+      /* align-items: center; */
+    }
+
+    .greeting img {
+      width: 240px;
+      margin-right: 24px;
+    }
+
+    .name {
+      width: 240px;
+      text-align: center;
+    }
+
+    .greeting p {
+      line-height: 1.6rem;
+      font-size: 1.2rem;
+    }
+
+    .company h2 {
+      font-size: 48px;
+    }
+
+    .important-things p {
+      font-size: 28px;
+      padding-top: 16px;
+    }
+
+    dt {
+      font-size: 1.3rem;
+      padding-left: 48px;
+    }
+
+    dd {
+      font-size: 1.2rem;
+    }
+
+    dt::before {
+      font-size: 32px;
+      padding: 0;
+      top: 5px;
+    }
+
+    .capital {
+      background-position: center;
+    }
+
+    .capital ul {
+      display: flex;
+      width: 1000px;
+    }
+
+    .capital li {
+      width: 25%;
+    }
+
+    .capital i {
+      font-size: 80px;
+    }
+
+    /* Result */
+    .acheivements table th,
+    .achievements table td,
+    .achievements table p{
+      font-size:1.2rem;
+      line-height: 1.6rem;
+      padding: 8px;
+    }
+
+    table th {
+      font-size: 1.2rem;
+    }
+
+    .achievements span {
+      padding-bottom: 8px;
+      display: inline-block;
+      font-size:1.2rem;
+    }
+
+    /* Recruit */
+    .recruit table th,
+    .recruit table td,
+    .recruit table p{
+      font-size:1.2rem;
+      line-height: 1.6rem;
+      padding: 8px;
+    }
+
+    /* contact */
+    .info p {
+      margin-bottom: 8px;
+      font-size: 1.2rem;
+    }
+
+    .info {
+      display: flex;
+    }
+
+    .address,
+    .mail {
+      width: 49%;
+    }
+
+    .address {
+      margin-right: 1%;
+    }
+
+    .form p {
+      font-size: 28px;
+      padding-top: 16px;
+      margin-bottom: 8px;
+    }
+
+    form {
+      font-size: 1.2rem;
+    }
+
+    input[type="submit"] {
+      margin-top: 24px;
+      margin-bottom: 64px;
+      font-size: 1.2rem;
+    }
+
+    footer small{
+      font-size: 1rem;
+    }
+}
