@@ -127,6 +127,18 @@
     padding-bottom: 16px;
   }
 
+  .content img {
+    width: 300px;
+  }
+
+  .content p {
+    margin-top: 16px;
+  }
+
+  .content li {
+    font-size: 1.2rem;
+  }
+
   /* company */
     .greetings {
       display: flex;
@@ -187,6 +199,11 @@
 
     .capital i {
       font-size: 80px;
+    }
+
+    .popup {
+      width: 250px;
+      left: 0;
     }
 
     /* Result */

@@ -33,19 +33,37 @@
 
 // modal
 {
-  const skills = document.querySelectorAll('.skill a');
-  const contents = document.querySelectorAll('.content');
-  const skill = [];
-  let currentSkill = 0;
+  const skillboxes = document.querySelectorAll('.skillbox');
+  const opens = document.querySelectorAll('.open');
+  const closes = document.querySelectorAll('.modal-close');
+  const mask = document.getElementById('mask');
+  const modals = document.querySelectorAll('.content');
+  const html = document.querySelector('html');
+  const body = document.querySelector('body');
 
-  function openModal() {
-    for(let i = 0; i < skills.length; i++){
-      console.log(i);
-    }
-  }
-  openModal();
+  for (let i = 0; i < opens.length; i++) {
+
+    opens[i].addEventListener('click', () => {
+      mask.classList.remove('modal-hidden');
+      html.classList.add('modal-hidden');
+      body.classList.add('modal-hidden');
+      modals[i].classList.remove('modal-hidden');
+      });
+
+      closes.forEach(close => {
+        close.addEventListener('click', () => {
+          modals[i].classList.add('modal-hidden');
+          html.classList.remove('modal-hidden');
+          body.classList.remove('modal-hidden');
+          mask.classList.add('modal-hidden');
+      });
+
+      mask.addEventListener('click', () => {
+        close.click();
+      });
+    });
+  };
 }
-
 
 // important-things
 {
@@ -63,6 +81,19 @@
     });
   });
 }
+
+{
+  const icons = document.querySelectorAll('.capital ul li i');
+  const popups = document.querySelectorAll('.popup');
+
+  for(let i = 0; i < icons.length; i++){
+
+    icons[i].addEventListener('click', ()=> {
+      popups[i].classList.toggle('hidden');
+    });
+  };
+}
+
 
 // table
 {

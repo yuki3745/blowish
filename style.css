@@ -1,4 +1,9 @@
 /* common */
+/* スクロール無効 */
+html.modal-hidden,
+body.modal-hidden {
+  overflow: hidden
+}
 
 body {
   margin: 0;
@@ -307,8 +312,8 @@ header img{
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
-  position: absolute;
-  top: 40px;
+  position: fixed;
+  top: 20px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -357,7 +362,7 @@ header img{
   padding-right: 4px;
 }
 
-#modal-close {
+.modal-close{
   color: #fff;
   font-size: 1rem;
   padding: 8px 16px;
@@ -414,6 +419,43 @@ header img{
   text-align: left;
   font-size: 14px;
   line-height: 1.5rem;
+}
+
+.capital li {
+  position: relative;
+}
+
+.popup {
+  display: block;
+  width: 160px;
+  background-color: #fff;
+  position: absolute;
+  top: 130px;
+  left: 40px;
+  z-index: 11;
+  border-radius: 8px;
+  border: 1px solid #777;
+  box-shadow: 10px 10px 20px 5px rgba(119, 119, 119, 0.2);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.popup.hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+  user-select: none;
+}
+
+.capital .popup p {
+  color: #6f9ec7;
+  margin-bottom: 0;
+  padding: 6px;
+}
+
+.capital .popup p:first-child {
+  border-bottom: 1px solid #ddd;
+  background-color: #f7f7f7;
+  border-radius: 8px 8px 0 0;
 }
 
 .important-things {
