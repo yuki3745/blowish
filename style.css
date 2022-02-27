@@ -1,8 +1,7 @@
 /* common */
-/* スクロール無効 */
 html.modal-hidden,
 body.modal-hidden {
-  overflow: hidden
+overflow: hidden;
 }
 
 body {
@@ -263,6 +262,15 @@ header img{
   margin-bottom: 40px;
 }
 
+.services p {
+  align-items: center;
+}
+
+.services footer {
+  align-items: center;
+  margin-top: 16px;
+}
+
 .skill{
   background-color: #6f9ec7;
   color: #e9f8f5;
@@ -309,6 +317,7 @@ header img{
 .content {
   max-width: 800px;
   width: 90%;
+  max-height: 90%;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
@@ -319,6 +328,7 @@ header img{
   margin: 0 auto;
   transition:0.4s;
   opacity: 1;
+  overflow-y:scroll;
 }
 
 .content .container {
@@ -356,6 +366,7 @@ header img{
   line-height: 1.4rem;
   color: #777;
   padding-bottom: 4px;
+  vertical-align: bottom;
 }
 
 .content i {
@@ -419,43 +430,6 @@ header img{
   text-align: left;
   font-size: 14px;
   line-height: 1.5rem;
-}
-
-.capital li {
-  position: relative;
-}
-
-.popup {
-  display: block;
-  width: 160px;
-  background-color: #fff;
-  position: absolute;
-  top: 130px;
-  left: 40px;
-  z-index: 11;
-  border-radius: 8px;
-  border: 1px solid #777;
-  box-shadow: 10px 10px 20px 5px rgba(119, 119, 119, 0.2);
-  opacity: 1;
-  transition: 0.4s;
-}
-
-.popup.hidden {
-  opacity: 0;
-  transform: translateY(-20px);
-  user-select: none;
-}
-
-.capital .popup p {
-  color: #6f9ec7;
-  margin-bottom: 0;
-  padding: 6px;
-}
-
-.capital .popup p:first-child {
-  border-bottom: 1px solid #ddd;
-  background-color: #f7f7f7;
-  border-radius: 8px 8px 0 0;
 }
 
 .important-things {
@@ -554,11 +528,48 @@ dl.appear dt::before {
   width: 100%;
 }
 
+.popup {
+  display: block;
+  width: 160px;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 11;
+  border-radius: 8px;
+  border: 1px solid #777;
+  box-shadow: 10px 10px 20px 5px rgba(119, 119, 119, 0.2);
+  opacity: 1;
+  transition: 0.4s;
+  text-align: center;
+}
+
+.popup.hidden {
+  opacity: 0;
+  transform: translate(-100%, -100%);
+  user-select: none;
+}
+
+.capital .popup p {
+  color: #6f9ec7;
+  margin-bottom: 0;
+  padding: 6px;
+}
+
+.capital .popup p:first-child {
+  border-bottom: 1px solid #ddd;
+  background-color: #f7f7f7;
+  border-radius: 8px 8px 0 0;
+}
+
+
 .capital li {
   color: #6f9ec7;
   width: 50%;
   padding: 8px;
   justify-content: space-between;
+  position: relative;
 }
 
 .capital i {

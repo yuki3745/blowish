@@ -99,6 +99,7 @@
 
   .skill img {
     padding-bottom: 16px;
+    text-align: center;
   }
 
   .skills {
@@ -111,14 +112,15 @@
     margin-right: 16px;
   }
 
-  .skill:last-child {
-    margin-right: 0;
+  .skill h3 {
+    font-size: 1.5rem;
   }
 
   .skill p {
     line-height: 1.5rem;
     text-align: left;
     font-size: 1.2rem;
+    margin-bottom: 8px;
   }
 
   h3 {
@@ -133,6 +135,7 @@
 
   .content p {
     margin-top: 16px;
+    line-height: 1.5rem;
   }
 
   .content li {
@@ -203,7 +206,6 @@
 
     .popup {
       width: 250px;
-      left: 0;
     }
 
     /* Result */
