@@ -144,9 +144,10 @@
       dot.classList.remove('nav-current');
     });
     dots[currentIndex].classList.add('nav-current');
+    updateButtons()
   }
 
-  updateButtons();
+  // updateButtons();
   setupDots();
 
   next.addEventListener('click', () => {
